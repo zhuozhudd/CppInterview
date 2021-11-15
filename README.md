@@ -2,9 +2,12 @@
 - author：songzhuozhu
 - email:songzhuozhu@sina.com
 
+- [C++ Interview 在线版](https://song-zhuozhu.gitee.io/cpp-interview/)
+- [C++ Interview Gitbook](https://walle-1.gitbook.io/cpp/)
+
 ![image-20211115102923132](https://gitee.com/song-zhuozhu/my_image/raw/master/img/image-20211115102923132.png)
 
-## 这是一份目前还很肤浅但在逐渐完善的面经
+## 这是一份目前还很肤浅但在逐渐完善的C++面经
 
 - 秋招结束，这是我在面试过程中整理的一份面经，在秋招的过程中，我逐渐明白，只靠背八股文是找不到好工作的，算法，基础，底层实现更为重要。
 - 之所以说这是一份肤浅的面经，因为绝大部分知识都很浅显，适合前期速成，但不够深入，秋招过后，我会逐渐进行完善，争取给绝大部分知识找到权威的出处，让读者也可以自行深入了解。比如：
