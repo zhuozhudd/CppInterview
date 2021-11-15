@@ -1,0 +1,25 @@
+{
+  "name": "electronic-book-demo",
+  "version": "1.0.0",
+  "description": "GitBook项目示例",
+  "main": "index.js",
+  "scripts": {
+    "serve": "NODE_ENV=dev gitbook serve",
+    "build": "rm -rf build && gitbook build && mv _book build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:zonglu/electronic-book-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gitbook-plugin-back-to-top-button": "0.1.4",
+    "gitbook-plugin-code": "0.1.0",
+    "gitbook-plugin-expandable-chapters": "0.2.0",
+    "gitbook-plugin-flexible-alerts": "1.0.3",
+    "gitbook-plugin-livereload": "0.0.1",
+    "gitbook-plugin-search-pro": "2.0.2",
+    "gitbook-plugin-theme-lou": "1.0.2"
+  }
+}
