@@ -1,0 +1,1232 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>十四、面试高频手写算法 · CppInterview</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="songzhuozhu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../十五、补充题目/" />
+    
+    
+    <link rel="prev" href="../十三、软件测试/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../一、C++基础知识/">
+            
+                <a href="../一、C++基础知识/">
+            
+                    
+                    一、C++基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../二、C++指针与引用/">
+            
+                <a href="../二、C++指针与引用/">
+            
+                    
+                    二、C++指针与引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../三、C++关键字/">
+            
+                <a href="../三、C++关键字/">
+            
+                    
+                    三、C++关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../四、C++面向对象/">
+            
+                <a href="../四、C++面向对象/">
+            
+                    
+                    四、C++面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../五、C++内存管理/">
+            
+                <a href="../五、C++内存管理/">
+            
+                    
+                    五、C++内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../六、C++STL C库函数/">
+            
+                <a href="../六、C++STL C库函数/">
+            
+                    
+                    六、C++STL C库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../七、C++新特性/">
+            
+                <a href="../七、C++新特性/">
+            
+                    
+                    七、C++新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../八、计算机网络/">
+            
+                <a href="../八、计算机网络/">
+            
+                    
+                    八、计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../九、网络编程/">
+            
+                <a href="../九、网络编程/">
+            
+                    
+                    九、网络编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../十、操作系统/">
+            
+                <a href="../十、操作系统/">
+            
+                    
+                    十、操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../十一、Linux/">
+            
+                <a href="../十一、Linux/">
+            
+                    
+                    十一、Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../十二、数据库/">
+            
+                <a href="../十二、数据库/">
+            
+                    
+                    十二、数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../十三、软件测试/">
+            
+                <a href="../十三、软件测试/">
+            
+                    
+                    十三、软件测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    十四、面试高频手写算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../十五、补充题目/">
+            
+                <a href="../十五、补充题目/">
+            
+                    
+                    十五、补充题目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >十四、面试高频手写算法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5341;&#x56DB;&#x3001;&#x9762;&#x8BD5;&#x9AD8;&#x9891;&#x624B;&#x5199;&#x7B97;&#x6CD5;">&#x5341;&#x56DB;&#x3001;&#x9762;&#x8BD5;&#x9AD8;&#x9891;&#x624B;&#x5199;&#x7B97;&#x6CD5;</h2>
+<h3 id="1---&#x5408;&#x5E76;&#x6709;&#x5E8F;&#x94FE;&#x8868;">1 - &#x5408;&#x5E76;&#x6709;&#x5E8F;&#x94FE;&#x8868;</h3>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">struct</span> ListNode
+{
+    <span class="hljs-keyword">int</span> val;
+    ListNode *next;
+    ListNode() : val(<span class="hljs-number">0</span>), next(<span class="hljs-literal">nullptr</span>) {}
+    ListNode(<span class="hljs-keyword">int</span> x) : val(x), next(<span class="hljs-literal">nullptr</span>) {}
+    ListNode(<span class="hljs-keyword">int</span> x, ListNode *next) : val(x), next(next) {}
+};
+
+<span class="hljs-function">ListNode *<span class="hljs-title">mergeTwoLists</span><span class="hljs-params">(ListNode *l1, ListNode *l2)</span>
+</span>{
+    ListNode *dumb = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>);
+    ListNode *p = dumb;
+    <span class="hljs-keyword">while</span> (l1 &amp;&amp; l2)
+    {
+
+        <span class="hljs-keyword">if</span> (l1-&gt;val &lt;= l2-&gt;val)
+        {
+            p-&gt;next = l1;
+            l1 = l1-&gt;next;
+        }
+        <span class="hljs-keyword">else</span>
+        {
+            p-&gt;next = l2;
+            l2 = l2-&gt;next;
+        }
+        p = p-&gt;next;
+    }
+
+    <span class="hljs-keyword">if</span> (l1 == <span class="hljs-literal">nullptr</span>)
+        p-&gt;next = l2;
+    <span class="hljs-keyword">if</span> (l2 == <span class="hljs-literal">nullptr</span>)
+        p-&gt;next = l1;
+    p = dumb-&gt;next;
+    <span class="hljs-keyword">delete</span> dumb;
+    <span class="hljs-keyword">return</span> p;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    ListNode *node1 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">1</span>);
+    ListNode *node2 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">2</span>);
+    ListNode *node3 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">3</span>);
+    ListNode *node4 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">4</span>);
+    ListNode *node5 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">5</span>);
+
+    <span class="hljs-comment">// list1: 1 3 5</span>
+    node1-&gt;next = node3;
+    node3-&gt;next = node5;
+    node5-&gt;next = <span class="hljs-literal">nullptr</span>;
+    <span class="hljs-comment">// list2: 2 4</span>
+    node2-&gt;next = node4;
+    node4-&gt;next = <span class="hljs-literal">nullptr</span>;
+
+    ListNode *newList = mergeTwoLists(node1, node2);
+    <span class="hljs-keyword">while</span> (newList)
+    {
+        <span class="hljs-built_in">cout</span> &lt;&lt; newList-&gt;val &lt;&lt; <span class="hljs-string">&quot; &quot;</span>;
+        newList = newList-&gt;next;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="2---&#x53CD;&#x8F6C;&#x94FE;&#x8868;">2 - &#x53CD;&#x8F6C;&#x94FE;&#x8868;</h3>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">struct</span> ListNode
+{
+    <span class="hljs-keyword">int</span> val;
+    ListNode *next;
+    ListNode() : val(<span class="hljs-number">0</span>), next(<span class="hljs-literal">nullptr</span>) {}
+    ListNode(<span class="hljs-keyword">int</span> x) : val(x), next(<span class="hljs-literal">nullptr</span>) {}
+    ListNode(<span class="hljs-keyword">int</span> x, ListNode *next) : val(x), next(next) {}
+};
+
+<span class="hljs-function">ListNode *<span class="hljs-title">reverseList</span><span class="hljs-params">(ListNode *head)</span>
+</span>{
+    ListNode *pre = <span class="hljs-literal">nullptr</span>;
+    ListNode *cur = head;
+    <span class="hljs-keyword">while</span> (cur)
+    {
+        ListNode *temp = cur-&gt;next;
+        cur-&gt;next = pre;
+        pre = cur;
+        cur = temp;
+    }
+    <span class="hljs-keyword">return</span> pre;
+}
+
+<span class="hljs-function">ListNode *<span class="hljs-title">init</span><span class="hljs-params">()</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">auto</span> head = init();
+    head = reverseList(head);
+    <span class="hljs-keyword">while</span> (head != <span class="hljs-literal">nullptr</span>)
+    {
+        <span class="hljs-built_in">cout</span> &lt;&lt; head-&gt;val &lt;&lt; <span class="hljs-string">&quot; &quot;</span>;
+        head = head-&gt;next;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-function">ListNode *<span class="hljs-title">init</span><span class="hljs-params">()</span>
+</span>{
+    ListNode *head = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">1</span>);
+    ListNode *node1 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">2</span>);
+    ListNode *node2 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">3</span>);
+    ListNode *node3 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">4</span>);
+    ListNode *node4 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">5</span>);
+
+    head-&gt;next = node1;
+    node1-&gt;next = node2;
+    node2-&gt;next = node3;
+    node3-&gt;next = node4;
+    node4-&gt;next = <span class="hljs-literal">nullptr</span>;
+
+    <span class="hljs-keyword">return</span> head;
+}
+</code></pre>
+<h3 id="3---&#x6392;&#x5E8F;&#xFF1A;&#x5192;&#x6CE1;&#x3001;&#x76F4;&#x63D2;&#x3001;&#x9009;&#x62E9;&#x3001;&#x5FEB;&#x6392;&#x3001;&#x5806;&#x6392;&#x5E8F;&#x3001;&#x5F52;&#x5E76;&#x6392;&#x5E8F;">3 - &#x6392;&#x5E8F;&#xFF1A;&#x5192;&#x6CE1;&#x3001;&#x76F4;&#x63D2;&#x3001;&#x9009;&#x62E9;&#x3001;&#x5FEB;&#x6392;&#x3001;&#x5806;&#x6392;&#x5E8F;&#x3001;&#x5F52;&#x5E76;&#x6392;&#x5E8F;</h3>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;vector&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-comment">// &#x5192;&#x6CE1;&#x6392;&#x5E8F;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bubbleSort</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;nums)</span>
+</span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.size(); ++i)
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j + <span class="hljs-number">1</span> &lt; nums.size() - i; ++j)
+            <span class="hljs-keyword">if</span> (nums[j] &gt; nums[j + <span class="hljs-number">1</span>])
+                swap(nums[j], nums[j + <span class="hljs-number">1</span>]);
+}
+
+<span class="hljs-comment">// &#x9009;&#x62E9;&#x6392;&#x5E8F;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">selectionSort</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;nums)</span>
+</span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.size(); ++i)
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = i + <span class="hljs-number">1</span>; j &lt; nums.size(); ++j)
+            <span class="hljs-keyword">if</span> (nums[i] &gt; nums[j])
+                swap(nums[i], nums[j]);
+}
+
+<span class="hljs-comment">// &#x63D2;&#x5165;&#x6392;&#x5E8F;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">insertionSort</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;nums)</span>
+</span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; nums.size(); i++)
+    {
+        <span class="hljs-keyword">int</span> t = nums[i];
+        <span class="hljs-keyword">int</span> j;
+        <span class="hljs-keyword">for</span> (j = i - <span class="hljs-number">1</span>; j &gt;= <span class="hljs-number">0</span>; --j)
+        {
+            <span class="hljs-keyword">if</span> (nums[j] &gt; t)
+                nums[j + <span class="hljs-number">1</span>] = nums[j];
+            <span class="hljs-keyword">else</span>
+                <span class="hljs-keyword">break</span>;
+        }
+        nums[j + <span class="hljs-number">1</span>] = t;
+    }
+}
+
+<span class="hljs-comment">// &#x5FEB;&#x901F;&#x6392;&#x5E8F;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">quickSort</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;nums, <span class="hljs-keyword">int</span> left, <span class="hljs-keyword">int</span> right)</span>
+</span>{
+    <span class="hljs-keyword">if</span> (left &gt;= right)
+        <span class="hljs-keyword">return</span>;
+    <span class="hljs-keyword">int</span> i = left, j = right;
+    <span class="hljs-keyword">while</span> (i &lt; j)
+    {
+        <span class="hljs-comment">// &#x53D6;&#x6700;&#x5DE6;&#x8FB9;&#x7684;&#x6570;&#x505A;&#x57FA;&#x51C6;&#x6570;</span>
+        <span class="hljs-keyword">while</span> (nums[left] &lt;= nums[j] &amp;&amp; i &lt; j)
+            j--;
+        <span class="hljs-keyword">while</span> (nums[left] &gt;= nums[i] &amp;&amp; i &lt; j)
+            i++;
+        <span class="hljs-keyword">if</span> (i &lt; j)
+            swap(nums[i], nums[j]);
+    }
+    swap(nums[left], nums[i]);
+    quickSort(nums, left, i - <span class="hljs-number">1</span>);
+    quickSort(nums, i + <span class="hljs-number">1</span>, right);
+}
+
+<span class="hljs-comment">// &#x5806;&#x6392;&#x5E8F;</span>
+
+<span class="hljs-comment">// &#x9012;&#x5F52;&#x65B9;&#x5F0F;&#x6784;&#x5EFA;&#x5927;&#x6839;&#x5806;&#xFF0C;len&#x662F;arr&#x957F;&#x5EA6;&#xFF0C;index&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x975E;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x6807;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjust</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;arr, <span class="hljs-keyword">int</span> len, <span class="hljs-keyword">int</span> index)</span>
+</span>{
+    <span class="hljs-keyword">int</span> left = <span class="hljs-number">2</span> * index + <span class="hljs-number">1</span>;  <span class="hljs-comment">// index&#x7684;&#x5DE6;&#x5B50;&#x8282;&#x70B9;</span>
+    <span class="hljs-keyword">int</span> right = <span class="hljs-number">2</span> * index + <span class="hljs-number">2</span>; <span class="hljs-comment">// index&#x7684;&#x53F3;&#x5B50;&#x8282;&#x70B9;</span>
+
+    <span class="hljs-keyword">int</span> maxIdx = index; <span class="hljs-comment">// &#x627E;&#x51FA;&#x6700;&#x5927;&#x503C;&#x7684;&#x7D22;&#x5F15;</span>
+    <span class="hljs-keyword">if</span> (left &lt; len &amp;&amp; arr[left] &gt; arr[maxIdx])
+        maxIdx = left;
+    <span class="hljs-keyword">if</span> (right &lt; len &amp;&amp; arr[right] &gt; arr[maxIdx])
+        maxIdx = right;
+
+    <span class="hljs-keyword">if</span> (maxIdx != index)
+    {
+        swap(arr[maxIdx], arr[index]); <span class="hljs-comment">// &#x5C06;&#x6700;&#x5927;&#x503C;&#x653E;&#x5230;&#x7236;&#x8282;&#x70B9;&#x4F4D;&#x7F6E;</span>
+        adjust(arr, len, maxIdx);      <span class="hljs-comment">// &#x9012;&#x5F52;&#x8C03;&#x6574;&#x4E92;&#x6362;&#x540E;&#x7684;&#x6811;</span>
+    }
+}
+<span class="hljs-comment">// heapSort</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">heapSort</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;arr, <span class="hljs-keyword">int</span> size)</span>
+</span>{
+    <span class="hljs-comment">// &#x6784;&#x5EFA;&#x5927;&#x6839;&#x5806;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x975E;&#x53F6;&#x5B50;&#x7ED3;&#x70B9; arr.length / 2 - 1</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = size / <span class="hljs-number">2</span> - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; --i)
+        adjust(arr, size, i);
+
+    <span class="hljs-comment">// &#x8C03;&#x6574;&#x5927;&#x6839;&#x5806;</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = size - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">1</span>; --i)
+    {
+        swap(arr[<span class="hljs-number">0</span>], arr[i]);
+        adjust(arr, i, <span class="hljs-number">0</span>);
+    }
+}
+
+<span class="hljs-comment">// &#x5F52;&#x5E76;&#x6392;&#x5E8F;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">merge</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;nums, <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;temp, <span class="hljs-keyword">int</span> left, <span class="hljs-keyword">int</span> right)</span>
+</span>{
+    <span class="hljs-keyword">if</span> (left &gt;= right)
+        <span class="hljs-keyword">return</span>; <span class="hljs-comment">//&#x7EC8;&#x6B62;&#x6761;&#x4EF6;</span>
+    <span class="hljs-comment">// &#x9012;&#x5F52;&#x5212;&#x5206;</span>
+    <span class="hljs-keyword">int</span> mid = left + (right - left) / <span class="hljs-number">2</span>;
+    <span class="hljs-comment">//int res = mergeSort(nums, temp, left, mid) + mergeSort(nums, temp, mid + 1, right);</span>
+    merge(nums, temp, left, mid);
+    merge(nums, temp, mid + <span class="hljs-number">1</span>, right);
+    <span class="hljs-comment">// &#x5C06;&#x539F;&#x6570;&#x7EC4;&#x62F7;&#x8D1D;&#x5230;&#x8F85;&#x52A9;&#x7A7A;&#x95F4;</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> k = left; k &lt;= right; ++k)
+        temp[k] = nums[k];
+    <span class="hljs-comment">// &#x5408;&#x5E76;&#x9636;&#x6BB5;</span>
+    <span class="hljs-keyword">int</span> i = left, j = mid + <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> k = left; k &lt;= right; ++k)
+    {
+        <span class="hljs-keyword">if</span> (i == mid + <span class="hljs-number">1</span>)
+            nums[k] = temp[j++];
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (j == right + <span class="hljs-number">1</span> || temp[i] &lt;= temp[j])
+            nums[k] = temp[i++];
+        <span class="hljs-keyword">else</span>
+            nums[k] = temp[j++];
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">mergeSort</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; nums)</span>
+</span>{
+    <span class="hljs-keyword">if</span> (nums.size() &lt;=<span class="hljs-number">1</span>)
+        <span class="hljs-keyword">return</span>;
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; temp(nums.size());
+    merge(nums, temp, <span class="hljs-number">0</span>, nums.size() - <span class="hljs-number">1</span>);
+}
+
+
+<span class="hljs-comment">// &#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; nums{<span class="hljs-number">3</span>, <span class="hljs-number">15</span>, <span class="hljs-number">5</span>, <span class="hljs-number">26</span>, <span class="hljs-number">2</span>, <span class="hljs-number">12</span>, <span class="hljs-number">6</span>, <span class="hljs-number">33</span>, <span class="hljs-number">17</span>};
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x : nums)
+        <span class="hljs-built_in">cout</span> &lt;&lt; x &lt;&lt; <span class="hljs-string">&quot; &quot;</span>;
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    <span class="hljs-comment">// bubbleSort(nums);</span>
+    <span class="hljs-comment">// selectionSort(nums);</span>
+    <span class="hljs-comment">// insertionSort(nums);</span>
+    <span class="hljs-comment">// heapSort(nums, nums.size());</span>
+    mergeSort(nums);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> x : nums)
+        <span class="hljs-built_in">cout</span> &lt;&lt; x &lt;&lt; <span class="hljs-string">&quot; &quot;</span>;
+    <span class="hljs-comment">// lambda&#x533F;&#x540D;&#x51FD;&#x6570;&#x904D;&#x5386;&#xFF0C;&#x9700;&#x8981;C++11&#x652F;&#x6301;</span>
+    <span class="hljs-comment">// for_each(nums.begin(), nums.end(), [](const auto &amp;a)  { cout &lt;&lt; a &lt;&lt; &quot; &quot;; });</span>
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="4---lru&#x7F13;&#x5B58;">4 - LRU&#x7F13;&#x5B58;</h3>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;unordered_map&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">class</span> LRUCache
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-comment">// &#x5B9A;&#x4E49;&#x94FE;&#x8868;</span>
+    <span class="hljs-keyword">struct</span> Node
+    {
+        <span class="hljs-keyword">int</span> key, value;
+        Node *left, *right;
+        Node(<span class="hljs-keyword">int</span> _key, <span class="hljs-keyword">int</span> _value) : key(_key), value(_value), left(<span class="hljs-literal">nullptr</span>), right(<span class="hljs-literal">nullptr</span>) {}
+    } * L, *R;
+
+    <span class="hljs-keyword">int</span> n; <span class="hljs-comment">// &#x7F13;&#x5B58;&#x5927;&#x5C0F;</span>
+    <span class="hljs-built_in">unordered_map</span>&lt;<span class="hljs-keyword">int</span>, Node *&gt; hash;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">remove</span><span class="hljs-params">(Node *p)</span>
+    </span>{
+        p-&gt;left-&gt;right = p-&gt;right;
+        p-&gt;right-&gt;left = p-&gt;left;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(Node *p)</span>
+    </span>{
+        p-&gt;left = L;
+        p-&gt;right = L-&gt;right;
+        L-&gt;right-&gt;left = p;
+        L-&gt;right = p;
+    }
+
+    LRUCache(<span class="hljs-keyword">int</span> capacity)
+    {
+        n = capacity;
+        L = <span class="hljs-keyword">new</span> Node(<span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>);
+        R = <span class="hljs-keyword">new</span> Node(<span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>);
+        L-&gt;right = R;
+        R-&gt;left = L;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">get</span><span class="hljs-params">(<span class="hljs-keyword">int</span> key)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (hash.count(key) == <span class="hljs-number">0</span>)
+            <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>; <span class="hljs-comment">// &#x4E0D;&#x5B58;&#x5728;</span>
+        <span class="hljs-keyword">auto</span> p = hash[key];
+        remove(p);
+        insert(p);
+        <span class="hljs-keyword">return</span> p-&gt;value;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">put</span><span class="hljs-params">(<span class="hljs-keyword">int</span> key, <span class="hljs-keyword">int</span> value)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (hash.count(key))
+        {
+            <span class="hljs-keyword">auto</span> p = hash[key];
+            p-&gt;value = value;
+            remove(p);
+            insert(p);
+        }
+        <span class="hljs-keyword">else</span>
+        {
+            <span class="hljs-keyword">if</span> (n == hash.size())
+            {
+                <span class="hljs-keyword">auto</span> p = R-&gt;left;
+                remove(p);
+                hash.erase(p-&gt;key);
+                <span class="hljs-keyword">delete</span> p;
+            }
+            <span class="hljs-keyword">auto</span> p = <span class="hljs-keyword">new</span> Node(key, value);
+            hash[key] = p;
+            insert(p);
+        }
+    }
+};
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;LRUCache lRUCache(2);&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    <span class="hljs-function">LRUCache <span class="hljs-title">lRUCache</span><span class="hljs-params">(<span class="hljs-number">2</span>)</span></span>;
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;lRUCache.put(1, 1) &quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;lRUCache.put(2, 2)&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    lRUCache.put(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>);              <span class="hljs-comment">// &#x7F13;&#x5B58;&#x662F; {1=1}</span>
+    lRUCache.put(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>);              <span class="hljs-comment">// &#x7F13;&#x5B58;&#x662F; {1=1, 2=2}</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;lRUCache.get(1): &quot;</span>&lt;&lt; lRUCache.get(<span class="hljs-number">1</span>) &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// &#x8FD4;&#x56DE; 1</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;lRUCache.put(3, 3)&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    lRUCache.put(<span class="hljs-number">3</span>, <span class="hljs-number">3</span>);              <span class="hljs-comment">// &#x8BE5;&#x64CD;&#x4F5C;&#x4F1A;&#x4F7F;&#x5F97;&#x5173;&#x952E;&#x5B57; 2 &#x4F5C;&#x5E9F;&#xFF0C;&#x7F13;&#x5B58;&#x662F; {1=1, 3=3}</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;lRUCache.get(2): &quot;</span>&lt;&lt; lRUCache.get(<span class="hljs-number">2</span>) &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// &#x8FD4;&#x56DE; -1 (&#x672A;&#x627E;&#x5230;)</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;RUCache.put(4, 4)&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    lRUCache.put(<span class="hljs-number">4</span>, <span class="hljs-number">4</span>);              <span class="hljs-comment">// &#x8BE5;&#x64CD;&#x4F5C;&#x4F1A;&#x4F7F;&#x5F97;&#x5173;&#x952E;&#x5B57; 1 &#x4F5C;&#x5E9F;&#xFF0C;&#x7F13;&#x5B58;&#x662F; {4=4, 3=3}</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;lRUCache.get(1): &quot;</span>&lt;&lt; lRUCache.get(<span class="hljs-number">1</span>) &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// &#x8FD4;&#x56DE; -1 (&#x672A;&#x627E;&#x5230;)</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;lRUCache.get(3): &quot;</span>&lt;&lt; lRUCache.get(<span class="hljs-number">3</span>) &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// &#x8FD4;&#x56DE; 3</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;lRUCache.get(4): &quot;</span>&lt;&lt; lRUCache.get(<span class="hljs-number">4</span>) &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// &#x8FD4;&#x56DE; 4</span>
+}
+</code></pre>
+<h3 id="5---top-k-&#x95EE;&#x9898;">5 - Top K &#x95EE;&#x9898;</h3>
+<p><strong>&#x6C42;&#x7B2C;k&#x5927;&#x6216;&#x7B2C;k&#x5C0F;&#x7684;&#x6570;&#xFF1A;</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;vector&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">quickSort</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;nums, <span class="hljs-keyword">int</span> left, <span class="hljs-keyword">int</span> right, <span class="hljs-keyword">int</span> k)</span>
+</span>{
+    <span class="hljs-keyword">int</span> i = left, j = right;
+    <span class="hljs-keyword">while</span> (i &lt; j)
+    {
+        <span class="hljs-keyword">while</span> (i &lt; j &amp;&amp; nums[left] &lt;= nums[j])
+            j--;
+        <span class="hljs-keyword">while</span> (i &lt; j &amp;&amp; nums[left] &gt;= nums[i])
+            i++;
+        swap(nums[i], nums[j]);
+    }
+    swap(nums[i], nums[left]);
+    <span class="hljs-keyword">if</span> (i == k)
+        <span class="hljs-keyword">return</span> nums[i];
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i &gt; k)
+        <span class="hljs-keyword">return</span> quickSort(nums, left, i - <span class="hljs-number">1</span>, k);
+    <span class="hljs-keyword">else</span>
+        <span class="hljs-keyword">return</span> quickSort(nums, i + <span class="hljs-number">1</span>, right, k);
+}
+
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; nums{<span class="hljs-number">3</span>, <span class="hljs-number">15</span>, <span class="hljs-number">5</span>, <span class="hljs-number">26</span>, <span class="hljs-number">2</span>, <span class="hljs-number">12</span>, <span class="hljs-number">6</span>, <span class="hljs-number">33</span>, <span class="hljs-number">17</span>};
+    <span class="hljs-keyword">int</span> k = <span class="hljs-number">2</span>;
+    <span class="hljs-comment">// 2 3 5 6 12 15 17 26 33</span>
+    <span class="hljs-keyword">int</span> KthSamllest = quickSort(nums, <span class="hljs-number">0</span>, nums.size() - <span class="hljs-number">1</span>, k - <span class="hljs-number">1</span>);
+    <span class="hljs-keyword">int</span> KthLargest = quickSort(nums, <span class="hljs-number">0</span>, nums.size() - <span class="hljs-number">1</span>, nums.size() - k);
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;k=2&#xFF0C;&#x7B2C;2&#x5927;&#x4E3A;&#xFF1A;&quot;</span> &lt;&lt; KthLargest &lt;&lt; <span class="hljs-built_in">endl</span>;
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;k=2&#xFF0C;&#x7B2C;2&#x5C0F;&#x4E3A;&#xFF1A;&quot;</span> &lt;&lt; KthSamllest &lt;&lt; <span class="hljs-built_in">endl</span>;
+}
+</code></pre>
+<p><strong>&#x6C42;k&#x4E2A;&#x6700;&#x5C0F;&#x7684;&#x6570;&#x6216;&#x6700;&#x5927;&#x7684;&#x6570;&#xFF1A;</strong></p>
+<p>&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x662F;&#x6C42;k&#x4E2A;&#x6700;&#x5C0F;&#x7684;&#x6570;&#xFF0C;&#x5982;&#x6C42;&#x6700;&#x5927;&#x7684;&#x6570;&#xFF0C;&#x8BA9;&#x5FEB;&#x6392;&#x4ECE;&#x5927;&#x5230;&#x5C0F;&#x6392;&#x5E8F;&#x5373;&#x53EF;&#xFF0C;&#x5373;</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">while</span> (i &lt; j &amp;&amp; arr[j] &lt;= arr[left])
+    j--;
+<span class="hljs-keyword">while</span> (i &lt; j &amp;&amp; arr[i] &gt;= arr[left])
+    i++;
+</code></pre>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;vector&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; quickSort(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; &amp;arr, <span class="hljs-keyword">int</span> left, <span class="hljs-keyword">int</span> right, <span class="hljs-keyword">int</span> k)
+{
+    <span class="hljs-keyword">int</span> i = left, j = right;
+    <span class="hljs-keyword">while</span> (i &lt; j)
+    {
+        <span class="hljs-keyword">while</span> (i &lt; j &amp;&amp; arr[j] &gt;= arr[left])
+            j--;
+        <span class="hljs-keyword">while</span> (i &lt; j &amp;&amp; arr[i] &lt;= arr[left])
+            i++;
+        swap(arr[i], arr[j]);
+    }
+    swap(arr[i], arr[left]);
+    <span class="hljs-keyword">if</span> (i &gt; k)
+        <span class="hljs-keyword">return</span> quickSort(arr, left, i - <span class="hljs-number">1</span>, k);
+    <span class="hljs-keyword">if</span> (i &lt; k)
+        <span class="hljs-keyword">return</span> quickSort(arr, i + <span class="hljs-number">1</span>, right, k);
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; res;
+    res.assign(arr.begin(), arr.begin() + k);
+    <span class="hljs-keyword">return</span> res;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; nums{<span class="hljs-number">3</span>, <span class="hljs-number">15</span>, <span class="hljs-number">5</span>, <span class="hljs-number">26</span>, <span class="hljs-number">2</span>, <span class="hljs-number">12</span>, <span class="hljs-number">6</span>, <span class="hljs-number">33</span>, <span class="hljs-number">17</span>};
+    <span class="hljs-keyword">int</span> k = <span class="hljs-number">2</span>;
+    <span class="hljs-comment">// 2 3 5 6 12 15 17 26 33</span>
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; KthSamllest = quickSort(nums, <span class="hljs-number">0</span>, nums.size() - <span class="hljs-number">1</span>, k);
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;k = 2&#xFF0C;k&#x5C0F;&#x4E3A;&#xFF1A;&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    for_each(KthSamllest.begin(), KthSamllest.end(), [](<span class="hljs-keyword">const</span> <span class="hljs-keyword">auto</span> &amp;a)
+             { <span class="hljs-built_in">cout</span> &lt;&lt; a &lt;&lt; <span class="hljs-string">&quot; &quot;</span>; });
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="6---&#x91CD;&#x6392;&#x94FE;&#x8868;">6 - &#x91CD;&#x6392;&#x94FE;&#x8868;</h3>
+<p><a href="https://leetcode-cn.com/problems/reorder-list/" target="_blank">LeetCode134. &#x91CD;&#x6392;&#x94FE;&#x8868;</a></p>
+<p>$$L_0 \rightarrow L_1 \rightarrow L_2 \rightarrow L_3 ... \rightarrow L_n $$ </p>
+<p>&#x91CD;&#x6392;&#x540E;</p>
+<p>$$L<em>0 \rightarrow L_n \rightarrow L_1 \rightarrow L</em>{n-1} \rightarrow L<em>2 \rightarrow L</em>{n-2}... $$ </p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;deque&gt;</span></span>
+
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">struct</span> ListNode
+{
+    <span class="hljs-keyword">int</span> val;
+    ListNode *next;
+    ListNode() : val(<span class="hljs-number">0</span>), next(<span class="hljs-literal">nullptr</span>) {}
+    ListNode(<span class="hljs-keyword">int</span> x) : val(x), next(<span class="hljs-literal">nullptr</span>) {}
+};
+
+<span class="hljs-function">ListNode *<span class="hljs-title">reorderList</span><span class="hljs-params">(ListNode *head)</span>
+</span>{
+    <span class="hljs-built_in">deque</span>&lt;ListNode *&gt; dq;
+    ListNode *cur = head;
+    <span class="hljs-keyword">if</span> (cur == <span class="hljs-literal">nullptr</span>)
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nullptr</span>;
+
+    <span class="hljs-keyword">while</span> (cur-&gt;next)
+    {
+        dq.push_back(cur-&gt;next);
+        cur = cur-&gt;next;
+    }
+
+    <span class="hljs-keyword">int</span> cnt = <span class="hljs-number">0</span>;
+    ListNode *node = <span class="hljs-literal">nullptr</span>;
+    cur = head;
+    <span class="hljs-keyword">while</span> (dq.size())
+    {
+        <span class="hljs-keyword">if</span> (cnt % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
+        {
+            node = dq.back();
+            dq.pop_back();
+        }
+        <span class="hljs-keyword">else</span>
+        {
+            node = dq.front();
+            dq.pop_front();
+        }
+        cnt++;
+        cur-&gt;next = node;
+        cur = cur-&gt;next;
+    }
+    cur-&gt;next = <span class="hljs-literal">nullptr</span>;
+    <span class="hljs-keyword">return</span> head;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    ListNode *head = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">1</span>);
+    ListNode *node1 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">2</span>);
+    ListNode *node2 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">3</span>);
+    ListNode *node3 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">4</span>);
+    ListNode *node4 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">5</span>);
+    ListNode *node5 = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">6</span>);
+
+    head-&gt;next = node1;
+    node1-&gt;next = node2;
+    node2-&gt;next = node3;
+    node3-&gt;next = node4;
+    node4-&gt;next = node5;
+    node5-&gt;next = <span class="hljs-literal">nullptr</span>;
+
+    head = reorderList(head);
+
+    <span class="hljs-keyword">while</span> (head)
+    {
+        <span class="hljs-built_in">cout</span> &lt;&lt; head-&gt;val &lt;&lt; <span class="hljs-string">&quot; &quot;</span>;
+        head = head-&gt;next;
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="7---&#x591A;&#x7EBF;&#x7A0B;&#x4EA4;&#x66FF;&#x6253;&#x5370;">7 - &#x591A;&#x7EBF;&#x7A0B;&#x4EA4;&#x66FF;&#x6253;&#x5370;</h3>
+<h4 id="&#x4E09;&#x4E2A;&#x7EBF;&#x7A0B;&#x4EA4;&#x66FF;&#x6253;&#x5370;abc">&#x4E09;&#x4E2A;&#x7EBF;&#x7A0B;&#x4EA4;&#x66FF;&#x6253;&#x5370;ABC</h4>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;thread&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;mutex&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;condition_variable&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+mutex mymutex;
+condition_variable cv;
+<span class="hljs-keyword">int</span> flag = <span class="hljs-number">0</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printa</span><span class="hljs-params">()</span>
+</span>{
+    unique_lock&lt;mutex&gt; lk(mymutex);
+    <span class="hljs-keyword">int</span> count = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span> (count &lt; <span class="hljs-number">10</span>)
+    {
+        <span class="hljs-keyword">while</span> (flag != <span class="hljs-number">0</span>)
+            cv.wait(lk);
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;thread 1: a&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+        flag = <span class="hljs-number">1</span>;
+        cv.notify_all();
+        count++;
+    }
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;my thread 1 finish&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printb</span><span class="hljs-params">()</span>
+</span>{
+    unique_lock&lt;mutex&gt; lk(mymutex);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++)
+    {
+        <span class="hljs-keyword">while</span> (flag != <span class="hljs-number">1</span>)
+            cv.wait(lk);
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;thread 2: b&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+        flag = <span class="hljs-number">2</span>;
+        cv.notify_all();
+    }
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;my thread 2 finish&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printc</span><span class="hljs-params">()</span>
+</span>{
+    unique_lock&lt;mutex&gt; lk(mymutex);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++)
+    {
+        <span class="hljs-keyword">while</span> (flag != <span class="hljs-number">2</span>)
+            cv.wait(lk);
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;thread 3: c&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+        flag = <span class="hljs-number">0</span>;
+        cv.notify_all();
+    }
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;my thread 3 finish&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-function">thread <span class="hljs-title">th2</span><span class="hljs-params">(printa)</span></span>;
+    <span class="hljs-function">thread <span class="hljs-title">th1</span><span class="hljs-params">(printb)</span></span>;
+    <span class="hljs-function">thread <span class="hljs-title">th3</span><span class="hljs-params">(printc)</span></span>;
+
+    th1.join();
+    th2.join();
+    th3.join();
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot; main thread &quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+}
+</code></pre>
+<h4 id="&#x53CC;&#x7EBF;&#x7A0B;&#x4EA4;&#x66FF;&#x6253;&#x5370;">&#x53CC;&#x7EBF;&#x7A0B;&#x4EA4;&#x66FF;&#x6253;&#x5370;</h4>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;string&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;thread&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;mutex&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-built_in">std</span>::mutex data_mutex;
+<span class="hljs-keyword">int</span> flag = <span class="hljs-number">0</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printA</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *a, <span class="hljs-keyword">int</span> size)</span>
+</span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; size;)
+    {
+        data_mutex.lock();
+        <span class="hljs-keyword">if</span> (flag == <span class="hljs-number">0</span>)
+        {
+            <span class="hljs-built_in">cout</span> &lt;&lt; a[i] &lt;&lt; <span class="hljs-built_in">endl</span>;
+            flag = <span class="hljs-number">1</span>;
+            ++i;
+        }
+        data_mutex.unlock();
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printB</span><span class="hljs-params">(<span class="hljs-keyword">char</span> *b, <span class="hljs-keyword">int</span> size)</span>
+</span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; size;)
+    {
+        data_mutex.lock();
+        <span class="hljs-keyword">if</span> (flag == <span class="hljs-number">1</span>)
+        {
+            <span class="hljs-built_in">cout</span> &lt;&lt; b[i] &lt;&lt; <span class="hljs-built_in">endl</span>;
+            flag = <span class="hljs-number">0</span>;
+            ++i;
+        }
+        data_mutex.unlock();
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> a[<span class="hljs-number">4</span>] = {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>};
+    <span class="hljs-keyword">char</span> b[<span class="hljs-number">4</span>] = {<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>, <span class="hljs-string">&apos;d&apos;</span>};
+    <span class="hljs-built_in">std</span>::<span class="hljs-function">thread <span class="hljs-title">tA</span><span class="hljs-params">(&amp;printA, a, <span class="hljs-number">4</span>)</span></span>;
+    <span class="hljs-built_in">std</span>::<span class="hljs-function">thread <span class="hljs-title">tB</span><span class="hljs-params">(&amp;printB, b, <span class="hljs-number">4</span>)</span></span>;
+    tA.join();
+    tB.join();
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="8---&#x5355;&#x4F8B;&#x6A21;&#x5F0F;">8 - &#x5355;&#x4F8B;&#x6A21;&#x5F0F;</h3>
+<p><strong>&#x997F;&#x6C49;&#x6A21;&#x5F0F;&#xFF1A;</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">class</span> singlePattern {
+<span class="hljs-keyword">private</span>:
+    singlePattern() {};
+    <span class="hljs-keyword">static</span> singlePattern* p;
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">static</span> singlePattern* <span class="hljs-title">instance</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-keyword">class</span> GC {
+    <span class="hljs-keyword">public</span>:
+        ~GC() {
+            <span class="hljs-keyword">if</span> (singlePattern::p != <span class="hljs-literal">nullptr</span>) {
+                <span class="hljs-keyword">delete</span> singlePattern::p;
+                singlePattern::p = <span class="hljs-literal">nullptr</span>;
+            } <span class="hljs-comment">// Garbage Collection</span>
+        }
+    };
+};
+
+singlePattern* singlePattern::p = <span class="hljs-keyword">new</span> singlePattern();
+singlePattern* singlePattern::instance() {
+    <span class="hljs-keyword">return</span> p;
+}
+</code></pre>
+<p><strong>&#x61D2;&#x6C49;&#x6A21;&#x5F0F;&#xFF1A;</strong></p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">class</span> singlePattern {
+<span class="hljs-keyword">private</span>:
+    <span class="hljs-keyword">static</span> singlePattern* p;
+    singlePattern(){}
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">static</span> singlePattern* <span class="hljs-title">instance</span><span class="hljs-params">()</span></span>;
+    <span class="hljs-keyword">class</span> CG {
+    <span class="hljs-keyword">public</span>:
+        ~CG() {
+            <span class="hljs-keyword">if</span> (singlePattern::p != <span class="hljs-literal">nullptr</span>) {
+                <span class="hljs-keyword">delete</span> singlePattern::p;
+                singlePattern::p = <span class="hljs-literal">nullptr</span>;
+            }
+        }
+    };
+};
+singlePattern* singlePattern::p = <span class="hljs-literal">nullptr</span>;
+singlePattern* singlePattern::instance() {
+    <span class="hljs-keyword">if</span> (p == <span class="hljs-literal">nullptr</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> singlePattern();
+    }
+    <span class="hljs-keyword">return</span> p;
+}
+</code></pre>
+<h3 id="9---&#x7B80;&#x5355;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;">9 - &#x7B80;&#x5355;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;</h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">enum</span> productType {
+    TypeA,
+    TypeB,
+    TypeC
+} productTypeTag;
+
+<span class="hljs-keyword">class</span> Product {
+
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> </span>= <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">virtual</span> ~Product() = <span class="hljs-number">0</span>;
+};
+
+<span class="hljs-keyword">class</span> ProductA :<span class="hljs-keyword">public</span> Product {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;ProductA&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+    ~ProductA() {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;~ProductA&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+};
+
+<span class="hljs-keyword">class</span> ProductB :<span class="hljs-keyword">public</span> Product {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;ProductB&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+    ~ProductB() {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;~ProductB&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+};
+
+<span class="hljs-keyword">class</span> ProductC :<span class="hljs-keyword">public</span> Product {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;ProductC&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+    ~ProductC() {
+        <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;~ProductC&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    }
+};
+
+<span class="hljs-keyword">class</span> Factory {
+
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function">Product* <span class="hljs-title">createProduct</span><span class="hljs-params">(productType type)</span> </span>{
+        <span class="hljs-keyword">switch</span> (type) {
+        <span class="hljs-keyword">case</span> TypeA:
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ProductA();
+        <span class="hljs-keyword">case</span> TypeB:
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ProductB();
+        <span class="hljs-keyword">case</span> TypeC:
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ProductC();
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">nullptr</span>;
+        }
+    }
+};
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../十三、软件测试/" class="navigation navigation-prev " aria-label="Previous page: 十三、软件测试">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../十五、补充题目/" class="navigation navigation-next " aria-label="Next page: 十五、补充题目">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"十四、面试高频手写算法","level":"1.15","depth":1,"next":{"title":"十五、补充题目","level":"1.16","depth":1,"path":"十五、补充题目/README.md","ref":"./十五、补充题目/README.md","articles":[]},"previous":{"title":"十三、软件测试","level":"1.14","depth":1,"path":"十三、软件测试/README.md","ref":"./十三、软件测试/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-sharing","-search","-favicon","-code","expandable-chapters","intopic-toc","back-to-top-button","search-pro","splitter","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":{"de":"In diesem Artikel","en":"In this article"},"maxDepth":2,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"songzhuozhu","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeLou":{"nav":[{"target":"_blank","url":"https://github.com/zhuozhudd","name":"Github"}]}},"title":"CppInterview","gitbook":"*","description":"秋招总结"},"file":{"path":"十四、面试高频手写算法/README.md","mtime":"2021-11-15T02:50:52.449Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-15T03:17:42.817Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

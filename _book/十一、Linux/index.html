@@ -1,0 +1,764 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>十一、Linux · CppInterview</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="songzhuozhu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../十二、数据库/" />
+    
+    
+    <link rel="prev" href="../十、操作系统/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../一、C++基础知识/">
+            
+                <a href="../一、C++基础知识/">
+            
+                    
+                    一、C++基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../二、C++指针与引用/">
+            
+                <a href="../二、C++指针与引用/">
+            
+                    
+                    二、C++指针与引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../三、C++关键字/">
+            
+                <a href="../三、C++关键字/">
+            
+                    
+                    三、C++关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../四、C++面向对象/">
+            
+                <a href="../四、C++面向对象/">
+            
+                    
+                    四、C++面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../五、C++内存管理/">
+            
+                <a href="../五、C++内存管理/">
+            
+                    
+                    五、C++内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../六、C++STL C库函数/">
+            
+                <a href="../六、C++STL C库函数/">
+            
+                    
+                    六、C++STL C库函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../七、C++新特性/">
+            
+                <a href="../七、C++新特性/">
+            
+                    
+                    七、C++新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../八、计算机网络/">
+            
+                <a href="../八、计算机网络/">
+            
+                    
+                    八、计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../九、网络编程/">
+            
+                <a href="../九、网络编程/">
+            
+                    
+                    九、网络编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../十、操作系统/">
+            
+                <a href="../十、操作系统/">
+            
+                    
+                    十、操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    十一、Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../十二、数据库/">
+            
+                <a href="../十二、数据库/">
+            
+                    
+                    十二、数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../十三、软件测试/">
+            
+                <a href="../十三、软件测试/">
+            
+                    
+                    十三、软件测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../十四、面试高频手写算法/">
+            
+                <a href="../十四、面试高频手写算法/">
+            
+                    
+                    十四、面试高频手写算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../十五、补充题目/">
+            
+                <a href="../十五、补充题目/">
+            
+                    
+                    十五、补充题目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >十一、Linux</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5341;&#x4E00;&#x3001;linux">&#x5341;&#x4E00;&#x3001;Linux</h2>
+<h3 id="&#x4F60;&#x7528;&#x8FC7;&#x7684;-linux-&#x5E38;&#x7528;&#x547D;&#x4EE4;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;&#xFF08;&#x6309;&#x91CD;&#x8981;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x6392;&#x5217;&#xFF09;">&#x4F60;&#x7528;&#x8FC7;&#x7684; Linux &#x5E38;&#x7528;&#x547D;&#x4EE4;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;&#xFF08;&#x6309;&#x91CD;&#x8981;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x6392;&#x5217;&#xFF09;</h3>
+<h4 id="part1-&#x5E38;&#x7528;&#x90E8;&#x5206;">Part1. &#x5E38;&#x7528;&#x90E8;&#x5206;</h4>
+<h5 id="1---chmod-&#x6743;&#x9650;">1 - chmod &#x6743;&#x9650;</h5>
+<p>Linux&#x7CFB;&#x7EDF;&#x4E2D;&#x4E00;&#x5207;&#x90FD;&#x662F;&#x6587;&#x4EF6;&#x3002;Linux&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x7B26;&#x6765;&#x533A;&#x5206;&#x4E0D;&#x540C;&#x7684;&#x6587;&#x4EF6;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x666E;&#x901A;&#x6587;&#x4EF6;</th>
+<th style="text-align:center">&#x76EE;&#x5F55;&#x6587;&#x4EF6;</th>
+<th style="text-align:center">&#x94FE;&#x63A5;&#x6587;&#x4EF6;</th>
+<th style="text-align:center">&#x5757;&#x8BBE;&#x5907;&#x6587;&#x4EF6;</th>
+<th style="text-align:center">&#x5B57;&#x7B26;&#x8BBE;&#x5907;&#x6587;&#x4EF6;</th>
+<th style="text-align:center">&#x7BA1;&#x9053;&#x6587;&#x4EF6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-</td>
+<td style="text-align:center">d</td>
+<td style="text-align:center">l</td>
+<td style="text-align:center">b</td>
+<td style="text-align:center">c</td>
+<td style="text-align:center">p</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5176;&#x4E2D;&#x6700;&#x5E38;&#x7528;&#x7684;&#x662F;&#x666E;&#x901A;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x64CD;&#x4F5C;&#x6709;&#xFF1A;</p>
+<p><img src="https://gitee.com/song-zhuozhu/my_image/raw/master/img/image-20210926105417660.png" alt="image-20210926105417660"></p>
+<p>&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x90FD;&#x6709;&#x6240;&#x5C5E;&#x7684;&#x6240;&#x6709;&#x8005;&#x548C;&#x6240;&#x6709;&#x7EC4;&#xFF0C;&#x5E76;&#x89C4;&#x5B9A;&#x4E86;&#x6587;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x8005;&#x3001;&#x6240;&#x6709;&#x7EC4;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x4EBA;&#x5BF9;&#x6587;&#x4EF6;&#x7684; <strong>&#x53EF;&#x8BFB;&#xFF08;r&#xFF09;&#x3001;&#x53EF;&#x5199;&#xFF08;w&#xFF09;&#x3001;&#x53EF;&#x6267;&#x884C;&#xFF08;x&#xFF09;</strong>&#x6743;&#x9650;&#x3002;&#x6240;&#x4EE5;&#x6587;&#x4EF6;&#x7684;&#x8BFB;&#x3001;&#x5199;&#x3001;&#x6267;&#x884C;&#x6743;&#x9650;&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x4E3A;rwx&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x6570;&#x5B57;4&#x3001;2&#x3001;1&#x6765;&#x8868;&#x793A;&#x3002;&#x6587;&#x4EF6;&#x6240;&#x6709;&#x8005;&#xFF0C;&#x6240;&#x793A;&#x7EC4;&#x53CA;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x6743;&#x9650;&#x4E4B;&#x95F4;&#x65E0;&#x5173;&#x8054;</p>
+<p><img src="https://gitee.com/song-zhuozhu/my_image/raw/master/img/image-20210926105445692.png" alt="image-20210926105445692"></p>
+<p>&#x6587;&#x4EF6;&#x6743;&#x9650;&#x7684;&#x6570;&#x5B57;&#x8868;&#x793A;&#x6CD5;&#x57FA;&#x4E8E;&#x5B57;&#x7B26;&#xFF08;rwx&#xFF09;&#x7684;&#x6743;&#x9650;&#x8BA1;&#x7B97;&#x800C;&#x6765;&#xFF0C;&#x5176;&#x76EE;&#x7684;&#x662F;&#x7B80;&#x5316;&#x6743;&#x9650;&#x7684;&#x8868;&#x793A;&#x65B9;&#x5F0F;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x82E5;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x6743;&#x9650;&#x4E3A;7&#xFF0C;&#x5219;&#x4EE3;&#x8868;&#x53EF;&#x8BFB;&#x3001;&#x53EF;&#x5199;&#x3001;&#x53EF;&#x6267;&#x884C;&#xFF08;4+2+1&#xFF09;&#xFF1B;&#x82E5;&#x6743;&#x9650;&#x4E3A;6&#xFF0C;&#x5219;&#x4EE3;&#x8868;&#x53EF;&#x8BFB;&#x3001;&#x53EF;&#x5199;&#xFF08;4+2&#xFF09;&#x3002;</p>
+<p>&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;&#xFF1A;&#x73B0;&#x5728;&#x6709;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x6240;&#x6709;&#x8005;&#x62E5;&#x6709;&#x53EF;&#x8BFB;&#x3001;&#x53EF;&#x5199;&#x3001;&#x53EF;&#x6267;&#x884C;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x5176;&#x6587;&#x4EF6;&#x6240;&#x5C5E;&#x7EC4;&#x62E5;&#x6709;&#x53EF;&#x8BFB;&#x3001;&#x53EF;&#x5199;&#x7684;&#x6743;&#x9650;&#xFF1B;&#x5176;&#x4ED6;&#x4EBA;&#x53EA;&#x6709;&#x53EF;&#x8BFB;&#x7684;&#x6743;&#x9650;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x6743;&#x9650;&#x5C31;&#x662F;rwxrw-r--&#xFF0C;&#x6570;&#x5B57;&#x6CD5;&#x8868;&#x793A;&#x5373;&#x4E3A;764&#x3002;</p>
+<p><img src="https://gitee.com/song-zhuozhu/my_image/raw/master/img/image-20210926105654176.png" alt="image-20210926105654176"></p>
+<p><img src="https://gitee.com/song-zhuozhu/my_image/raw/master/img/image-20210926110048765.png" alt="image-20210926110048765"></p>
+<p>&#x6700;&#x5DE6;&#x8FB9;&#xFF0C;&#x5F00;&#x5934;d&#x4EE3;&#x8868;&#x662F;&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#xFF0C;-&#x4EE3;&#x8868;&#x662F;&#x666E;&#x901A;&#x6587;&#x4EF6;&#xFF0C;&#x4E4B;&#x540E;&#x662F;&#x6743;&#x9650;&#xFF0C;&#x4F8B;&#x5982; server&#x6587;&#x4EF6;&#xFF0C;-rwxr-xr-x &#x4E3A; &#x666E;&#x901A;&#x6587;&#x4EF6;&#xFF08;-&#xFF09;&#x3001;&#x6240;&#x6709;&#x8005;&#x53EF;&#x8BFB;&#x53EF;&#x5199;&#x53EF;&#x6267;&#x884C;&#xFF08;rwx&#xFF09;&#x3001;&#x6240;&#x5C5E;&#x4E3B;&#x53EF;&#x8BFB;&#x53EF;&#x6267;&#x884C;&#x3001;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x53EF;&#x8BFB;&#x53EF;&#x6267;&#x884C;&#x3002;&#x540E;&#x9762;&#x7684;&#x6570;&#x5B57;&#x662F;&#x6587;&#x4EF6;&#x4E2A;&#x6570; &#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;root&#x662F;&#x6240;&#x5C5E;&#x4E3B;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;root&#x662F;&#x6240;&#x5C5E;&#x7EC4;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#xFF0C;&#x65E5;&#x671F;</p>
+<p>&#x5BF9;server&#x6267;&#x884C; chmod 777 &#x540E;&#xFF0C;&#x6743;&#x9650;&#x53D8;&#x6210;rwxrwxrwx</p>
+<p><img src="https://gitee.com/song-zhuozhu/my_image/raw/master/img/image-20210926110436330.png" alt="image-20210926110436330"></p>
+<p>&#x5982;&#x679C;&#x5BF9;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x8D4B;&#x6743;&#x8981;&#x52A0; -R&#xFF0C;&#x9012;&#x5F52;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x5BF9; freecplus&#x76EE;&#x5F55;&#x6267;&#x884C;&#x8D4B;&#x6743;&#xFF0C;&#x5373; <code>chmod -R 777 freecplus</code></p>
+<p>&#x8FD8;&#x6709;&#x91C7;&#x53D6;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;<code>chmod [ugoa&#x2026;][[&#xB1;=][rwxX]&#x2026;] file..</code> ,</p>
+<ul>
+<li>u &#x8868;&#x793A;&#x8BE5;&#x6863;&#x6848;&#x7684;&#x62E5;&#x6709;&#x8005;&#xFF0C;g &#x8868;&#x793A;&#x4E0E;&#x8BE5;&#x6863;&#x6848;&#x7684;&#x62E5;&#x6709;&#x8005;&#x5C5E;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x7FA4;&#x4F53;(group)&#x8005;&#xFF0C;o &#x8868;&#x793A;&#x5176;&#x4ED6;&#x4EE5;&#x5916;&#x7684;&#x4EBA;&#xFF0C;a &#x8868;&#x793A;&#x8FD9;&#x4E09;&#x8005;&#x7686;&#x662F;&#x3002;</li>
+<li>+&#x8868;&#x793A;&#x589E;&#x52A0;&#x6743;&#x9650;&#x3001;- &#x8868;&#x793A;&#x53D6;&#x6D88;&#x6743;&#x9650;&#x3001;= &#x8868;&#x793A;&#x552F;&#x4E00;&#x8BBE;&#x5B9A;&#x6743;&#x9650;&#x3002;</li>
+<li>r &#x8868;&#x793A;&#x53EF;&#x8BFB;&#x53D6;&#xFF0C;w &#x8868;&#x793A;&#x53EF;&#x5199;&#x5165;&#xFF0C;x &#x8868;&#x793A;&#x53EF;&#x6267;&#x884C;&#xFF0C;</li>
+</ul>
+<p><img src="https://gitee.com/song-zhuozhu/my_image/raw/master/img/image-20210926111502264.png" alt="image-20210926111502264"></p>
+<ul>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x6587;&#x4EF6;szzsleep&#xFF0C;&#x6743;&#x9650;&#x4E3A;rw-r--r--</li>
+<li>&#x7528;a+x&#xFF0C;&#x5373;&#x6240;&#x6709;&#x8005;&#x3001;&#x6240;&#x6709;&#x7EC4;&#x3001;&#x5176;&#x4ED6;&#x4EBA;&#x90FD;&#x6DFB;&#x52A0; x &#x6267;&#x884C;&#x6743;&#x9650;&#xFF0C;&#x53D8;&#x6210; rwxr-xr-x</li>
+<li>&#x518D;&#x7528;o-x&#xFF0C;&#x5C06;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x7684; x &#x6267;&#x884C;&#x6743;&#x9650;&#x5220;&#x9664;</li>
+</ul>
+<h5 id="2---grep-&#x641C;&#x7D22;&#x5185;&#x5BB9;">2 - grep &#x641C;&#x7D22;&#x5185;&#x5BB9;</h5>
+<p>grep (global search regular expression(RE) and print out the line,&#x5168;&#x9762;&#x641C;&#x7D22;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5E76;&#x628A;&#x884C;&#x6253;&#x5370;&#x51FA;&#x6765;)&#x662F;&#x4E00;&#x79CD;&#x5F3A;&#x5927;&#x7684;&#x6587;&#x672C;&#x641C;&#x7D22;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x80FD;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x641C;&#x7D22;&#x6587;&#x672C;&#xFF0C;&#x5E76;&#x628A;&#x5339;&#x914D;&#x7684;&#x884C;&#x6253;&#x5370;&#x51FA;&#x6765;&#x3002;</p>
+<p>&#x683C;&#x5F0F;&#xFF1A; <strong>grep &quot;&#x5185;&#x5BB9;&quot; &#x6587;&#x4EF6;&#x540D;</strong> </p>
+<p>&#x5185;&#x5BB9;&#x548C;&#x6587;&#x4EF6;&#x540D;&#x5747;&#x53EF;&#x5199;&#x4F5C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</p>
+<pre><code class="lang-shell">grep &apos;test&apos; d*&#x3000;&#x3000;# &#x663E;&#x793A;&#x6240;&#x6709;&#x4EE5;d&#x5F00;&#x5934;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x5305;&#x542B; test&#x7684;&#x884C;
+
+grep &#x2018;test&apos; aa bb cc &#x3000;&#x3000; # &#x663E;&#x793A;&#x5728;aa&#xFF0C;bb&#xFF0C;cc&#x6587;&#x4EF6;&#x4E2D;&#x5305;&#x542B;test&#x7684;&#x884C;
+
+grep &#x2018;[a-z]\{5\}&apos; aa &#x3000;&#x3000;# &#x663E;&#x793A;&#x6240;&#x6709;&#x5305;&#x542B;&#x6BCF;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x81F3;&#x5C11;&#x6709;5&#x4E2A;&#x8FDE;&#x7EED;&#x5C0F;&#x5199;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x884C;
+
+grep magic /usr/src&#x3000;&#x3000;# &#x663E;&#x793A;/usr/src&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;(&#x4E0D;&#x542B;&#x5B50;&#x76EE;&#x5F55;)&#x5305;&#x542B;magic&#x7684;&#x884C;
+
+grep -r magic /usr/src&#x3000;&#x3000;# &#x663E;&#x793A;/usr/src&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;(&#x5305;&#x542B;&#x5B50;&#x76EE;&#x5F55;)&#x5305;&#x542B;magic&#x7684;&#x884C;
+
+grep -v test *test*  # &#x53CD;&#x5411;&#x67E5;&#x627E;&#xFF0C; &#x67E5;&#x627E;&#x6587;&#x4EF6;&#x540D;&#x4E2D;&#x5305;&#x542B;test &#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x4F46;&#x4E0D;&#x5305;&#x542B;test&#x7684;&#x884C;
+</code></pre>
+<h5 id="3---find-&#x641C;&#x7D22;&#x6587;&#x4EF6;">3 - find &#x641C;&#x7D22;&#x6587;&#x4EF6;</h5>
+<p>&#x683C;&#x5F0F;&#xFF1A;<strong>find &#x76EE;&#x5F55;&#x540D; -name &#x6587;&#x4EF6;&#x540D; -print</strong></p>
+<ul>
+<li>&#x76EE;&#x5F55;&#x540D;&#xFF1A;&#x5F85;&#x641C;&#x7D22;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x641C;&#x7D22;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9664;&#x4E86;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x540D;&#xFF0C;&#x8FD8;&#x5305;&#x62EC;&#x5B83;&#x7684;&#x5404;&#x7EA7;&#x5B50;&#x76EE;&#x5F55;&#x3002;</li>
+<li>&#x6587;&#x4EF6;&#x540D;&#xFF1A;&#x5F85;&#x641C;&#x7D22;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x5339;&#x914D;&#x7684;&#x89C4;&#x5219;&#x3002;</li>
+</ul>
+<pre><code class="lang-shell">find /tmp -name *.c -print  # &#x4ECE;/tmp&#x76EE;&#x5F55;&#x5F00;&#x59CB;&#x641C;&#x7D22;&#xFF0C;&#x628A;&#x5168;&#x90E8;&#x7684;*.c&#x6587;&#x4EF6;&#x663E;&#x793A;&#x51FA;&#x6765;
+
+find . -name *.c -print # &#x4ECE;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x5F00;&#x59CB;&#x641C;&#x7D22;&#xFF0C;&#x628A;&#x5168;&#x90E8;&#x7684;*.c&#x6587;&#x4EF6;&#x663E;&#x793A;&#x51FA;&#x6765;
+</code></pre>
+<h5 id="4-cat&#x3001;more&#x3001;tail-&#x663E;&#x793A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;">4. cat&#x3001;more&#x3001;tail &#x663E;&#x793A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</h5>
+<p><code>cat &#x6587;&#x4EF6;&#x540D;</code>&#xFF1A;cat&#x547D;&#x4EE4;&#x4E00;&#x6B21;&#x663E;&#x793A;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;</p>
+<p><code>more &#x6587;&#x4EF6;&#x540D;</code>&#xFF1A;more&#x547D;&#x4EE4;&#x5206;&#x9875;&#x663E;&#x793A;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6309;&#x7A7A;&#x683C;&#x952E;&#x663E;&#x793A;&#x4E0B;&#x4E00;&#x9875;&#xFF0C;&#x6309;b&#x952E;&#x663E;&#x4E0A;&#x4E00;&#x9875;&#xFF0C;&#x6309;q&#x952E;&#x9000;&#x51FA;&#x3002;</p>
+<p><code>tail -f &#x6587;&#x4EF6;&#x540D;</code>&#xFF1A;tail -f&#x7528;&#x4E8E;&#x663E;&#x793A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x6700;&#x540E;&#x51E0;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x6709;&#x589E;&#x52A0;&#xFF0C;&#x5C31;&#x5B9E;&#x65F6;&#x7684;&#x5237;&#x65B0;&#x3002;&#x5BF9;&#x7A0B;&#x5E8F;&#x5458;&#x6765;&#x8BF4;&#xFF0C;tail -f&#x6781;&#x5176;&#x91CD;&#x8981;&#xFF0C;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x663E;&#x793A;&#x540E;&#x53F0;&#x670D;&#x52A1;&#x7A0B;&#x5E8F;&#x7684;&#x65E5;&#x5FD7;&#xFF0C;&#x7528;&#x4E8E;&#x8C03;&#x8BD5;&#x548C;&#x8DDF;&#x8E2A;&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;&#x3002;</p>
+<h4 id="part2-&#x7F51;&#x7EDC;&#xFF08;&#x6309;&#x91CD;&#x8981;&#x987A;&#x5E8F;&#x6392;&#x5E8F;&#xFF09;">Part2. &#x7F51;&#x7EDC;&#xFF08;&#x6309;&#x91CD;&#x8981;&#x987A;&#x5E8F;&#x6392;&#x5E8F;&#xFF09;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5E38;&#x7528;&#x547D;&#x4EE4;</th>
+<th style="text-align:center">&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>ifconfig</strong></td>
+<td style="text-align:center"><strong>&#x67E5;&#x770B;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x5C5E;&#x6027;</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">ip addr</td>
+<td style="text-align:center">&#x67E5;&#x770B;ip&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td style="text-align:center">ipconfig eh0 192.168.1.1 netmask 255.255.255.255</td>
+<td style="text-align:center">&#x914D;&#x7F6E;ip&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>netstat</strong></td>
+<td style="text-align:center"><strong>&#x67E5;&#x770B;&#x5404;&#x79CD;&#x7F51;&#x7EDC;&#x76F8;&#x5173;&#x4FE1;&#x606F;</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">netstat -lntp</td>
+<td style="text-align:center">&#x67E5;&#x770B;&#x6240;&#x6709;&#x76D1;&#x542C;&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td style="text-align:center">netstat -antp</td>
+<td style="text-align:center">&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x5EFA;&#x7ACB;&#x7684;TCP&#x8FDE;&#x63A5;</td>
+</tr>
+<tr>
+<td style="text-align:center">netstat -lutp</td>
+<td style="text-align:center">&#x67E5;&#x770B;TCP/UDP&#x7684;&#x72B6;&#x6001;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td style="text-align:center">route -n</td>
+<td style="text-align:center">&#x67E5;&#x770B;&#x8DEF;&#x7531;&#x8868;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="part3-&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;&#x4E0E;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;">Part3. &#x8FDB;&#x7A0B;&#x7BA1;&#x7406;&#x4E0E;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5E38;&#x7528;&#x547D;&#x4EE4;</th>
+<th style="text-align:center">&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ps -ef</td>
+<td style="text-align:center">&#x67E5;&#x770B;&#x6240;&#x6709;&#x8FDB;&#x7A0B;</td>
+</tr>
+<tr>
+<td style="text-align:center">ps -ef \</td>
+<td style="text-align:center">grep expression</td>
+<td>&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FC7;&#x6EE4;&#x51FA;&#x6240;&#x9700;&#x8981;&#x7684;&#x8FDB;&#x7A0B;</td>
+</tr>
+<tr>
+<td style="text-align:center">kill -s name</td>
+<td style="text-align:center">kill&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x8FDB;&#x7A0B;</td>
+</tr>
+<tr>
+<td style="text-align:center">kill -s pid</td>
+<td style="text-align:center">kill&#x6307;&#x5B9A;pid&#x7684;&#x8FDB;&#x7A0B;</td>
+</tr>
+<tr>
+<td style="text-align:center">top</td>
+<td style="text-align:center">&#x5B9E;&#x65F6;&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td style="text-align:center">iostate</td>
+<td style="text-align:center">&#x67E5;&#x770B;io&#x8BFB;&#x5199;/cpu&#x4F7F;&#x7528;&#x60C5;&#x51B5;</td>
+</tr>
+<tr>
+<td style="text-align:center">sar -u 1 10</td>
+<td style="text-align:center">&#x67E5;&#x8BE2;cpu&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#xFF08;1&#x79D2;1&#x6B21;&#xFF0C;&#x5171;10&#x6B21;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:center">sar -d 1 10</td>
+<td style="text-align:center">&#x67E5;&#x8BE2;&#x78C1;&#x76D8;&#x6027;&#x80FD;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="part4-&#x7CFB;&#x7EDF;&#x670D;&#x52A1;">Part4. &#x7CFB;&#x7EDF;&#x670D;&#x52A1;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5E38;&#x7528;&#x547D;&#x4EE4;</th>
+<th style="text-align:center">&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">systemctl  status  &lt;&#x670D;&#x52A1;&#x540D;&gt;</td>
+<td style="text-align:center">&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x670D;&#x52A1;</td>
+</tr>
+<tr>
+<td style="text-align:center">systemctl  start &lt;&#x670D;&#x52A1;&#x540D;&gt;</td>
+<td style="text-align:center">&#x542F;&#x52A8;&#x67D0;&#x4E2A;&#x670D;&#x52A1;</td>
+</tr>
+<tr>
+<td style="text-align:center">systemctl   stop &lt;&#x670D;&#x52A1;&#x540D;&gt;</td>
+<td style="text-align:center">&#x7EC8;&#x6B62;&#x67D0;&#x4E2A;&#x670D;&#x52A1;</td>
+</tr>
+<tr>
+<td style="text-align:center">systemctl  restart &lt;&#x670D;&#x52A1;&#x540D;&gt;</td>
+<td style="text-align:center">&#x91CD;&#x542F;&#x67D0;&#x4E2A;&#x670D;&#x52A1;</td>
+</tr>
+<tr>
+<td style="text-align:center">systemctl  enable &lt;&#x670D;&#x52A1;&#x540D;&gt;</td>
+<td style="text-align:center">&#x5F00;&#x542F;&#x81EA;&#x542F;&#x52A8;</td>
+</tr>
+<tr>
+<td style="text-align:center">systemctl  disable &lt;&#x670D;&#x52A1;&#x540D;&gt;</td>
+<td style="text-align:center">&#x5173;&#x95ED;&#x81EA;&#x542F;&#x52A8;</td>
+</tr>
+<tr>
+<td style="text-align:center">chkconfig --list</td>
+<td style="text-align:center">&#x5217;&#x51FA;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4F7F;&#x7528;systemctl&#x547D;&#x4EE4; &#x914D;&#x7F6E;&#x9632;&#x706B;&#x5899;&#x7684;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;</p>
+<p><strong>&#x67E5;&#x770B;&#x9632;&#x706B;&#x5899;&#x7684;&#x547D;&#x4EE4;&#xFF1A;</strong></p>
+<ul>
+<li>1&#xFF09;&#x67E5;&#x770B;&#x9632;&#x706B;&#x5899;&#x7684;&#x7248;&#x672C;&#x3002;firewall-cmd --version</li>
+<li>2&#xFF09;&#x67E5;&#x770B;firewall&#x7684;&#x72B6;&#x6001;&#x3002;firewall-cmd --state</li>
+<li>3&#xFF09;&#x67E5;&#x770B;firewall&#x670D;&#x52A1;&#x72B6;&#x6001;&#xFF08;&#x666E;&#x901A;&#x7528;&#x6237;&#x53EF;&#x6267;&#x884C;&#xFF09;&#x3002;systemctl status firewalld</li>
+<li>4&#xFF09;&#x67E5;&#x770B;&#x9632;&#x706B;&#x5899;&#x5168;&#x90E8;&#x7684;&#x4FE1;&#x606F;&#x3002;firewall-cmd --list-all</li>
+<li>5&#xFF09;&#x67E5;&#x770B;&#x9632;&#x706B;&#x5899;&#x5DF2;&#x5F00;&#x901A;&#x7684;&#x7AEF;&#x53E3;&#x3002;firewall-cmd --list-port</li>
+<li>6&#xFF09;&#x67E5;&#x770B;&#x9632;&#x706B;&#x5899;&#x5DF2;&#x5F00;&#x901A;&#x7684;&#x670D;&#x52A1;&#x3002;firewall-cmd --list-service</li>
+<li>7&#xFF09;&#x67E5;&#x770B;&#x5168;&#x90E8;&#x7684;&#x670D;&#x52A1;&#x5217;&#x8868;&#xFF08;&#x666E;&#x901A;&#x7528;&#x6237;&#x53EF;&#x6267;&#x884C;&#xFF09;&#x3002;firewall-cmd --get-services</li>
+<li>8&#xFF09;&#x67E5;&#x770B;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x662F;&#x5426;&#x5F00;&#x673A;&#x542F;&#x52A8;&#x3002; systemctl is-enabled firewalld</li>
+</ul>
+<p><strong>&#x914D;&#x7F6E;&#x9632;&#x706B;&#x5899;&#x7684;&#x547D;&#x4EE4;&#xFF1A;</strong></p>
+<ul>
+<li><p>1&#xFF09;&#x542F;&#x52A8;&#x3001;&#x91CD;&#x542F;&#x3001;&#x5173;&#x95ED;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x3002;</p>
+<ul>
+<li>systemctl start firewalld # &#x542F;&#x52A8;</li>
+<li>systemctl restart firewalld # &#x91CD;&#x542F;</li>
+<li>systemctl stop firewalld # &#x5173;&#x95ED; </li>
+</ul>
+</li>
+<li><p>2&#xFF09;&#x5F00;&#x653E;&#x3001;&#x79FB;&#x53BB;&#x67D0;&#x4E2A;&#x7AEF;&#x53E3;&#x3002;</p>
+<ul>
+<li>firewall-cmd --zone=public --add-port=80/tcp --permanent # &#x5F00;&#x653E;80&#x7AEF;&#x53E3;</li>
+<li>firewall-cmd --zone=public --remove-port=80/tcp --permanent # &#x79FB;&#x53BB;80&#x7AEF;&#x53E3;</li>
+</ul>
+</li>
+<li><p>3&#xFF09;&#x5F00;&#x653E;&#x3001;&#x79FB;&#x53BB;&#x8303;&#x56F4;&#x7AEF;&#x53E3;&#x3002;</p>
+<ul>
+<li>firewall-cmd --zone=public --add-port=5000-5500/tcp --permanent # &#x5F00;&#x653E;5000-5500&#x4E4B;&#x95F4;&#x7684;&#x7AEF;&#x53E3;</li>
+<li>firewall-cmd --zone=public --remove-port=5000-5500/tcp --permanent # &#x79FB;&#x53BB;5000-5500&#x4E4B;&#x95F4;&#x7684;&#x7AEF;&#x53E3;</li>
+</ul>
+</li>
+<li><p>4&#xFF09;&#x5F00;&#x653E;&#x3001;&#x79FB;&#x53BB;&#x670D;&#x52A1;&#x3002;</p>
+<ul>
+<li>firewall-cmd --zone=public --add-service=ftp --permanent # &#x5F00;&#x653E;ftp&#x670D;&#x52A1;</li>
+<li>firewall-cmd --zone=public --remove-service=ftp --permanent # &#x79FB;&#x53BB;http&#x670D;&#x52A1;</li>
+</ul>
+</li>
+<li><p>5&#xFF09;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x9632;&#x706B;&#x5899;&#x914D;&#x7F6E;&#xFF08;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x540E;&#x8981;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x9632;&#x706B;&#x5899;&#x914D;&#x7F6E;&#x6216;&#x91CD;&#x542F;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#xFF09;&#x3002;</p>
+<ul>
+<li>firewall-cmd --reload</li>
+</ul>
+</li>
+<li><p>6&#xFF09;&#x8BBE;&#x7F6E;&#x5F00;&#x673A;&#x65F6;&#x542F;&#x7528;&#x3001;&#x7981;&#x7528;&#x9632;&#x706B;&#x5899;&#x670D;&#x52A1;&#x3002;</p>
+<ul>
+<li>systemctl enable firewalld # &#x542F;&#x7528;&#x670D;&#x52A1;</li>
+<li>systemctl disable firewalld # &#x7981;&#x7528;&#x670D;&#x52A1;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x4F60;&#x7528;&#x8FC7;&#x7684;-linux-&#x5E38;&#x7528;&#x547D;&#x4EE4;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;&#xFF08;&#x6309;&#x91CD;&#x8981;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x6392;&#x5217;&#xFF09;">&#x4F60;&#x7528;&#x8FC7;&#x7684; Linux &#x5E38;&#x7528;&#x547D;&#x4EE4;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;&#xFF08;&#x6309;&#x91CD;&#x8981;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x6392;&#x5217;&#xFF09;</h3>
+<ul>
+<li>&#x9996;&#x5148;&#x662F;&#x4E00;&#x4E9B;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;&#x64CD;&#x4F5C;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<ul>
+<li>cd &#x3001;pwd&#x3001; ls&#x3001;</li>
+<li>&#x521B;&#x5EFA; touch &#x3001;mkdir&#xFF0C;&#x5220;&#x9664; rm&#x3001;&#x79FB;&#x52A8;&#x6216;&#x91CD;&#x547D;&#x540D; rm&#xFF0C;&#x590D;&#x5236;cp</li>
+<li>cat&#x3001;more&#x3001;tail &#x67E5;&#x770B;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</li>
+<li>&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x91CD;&#x8981;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5982;chmod &#x6743;&#x9650;&#x7BA1;&#x7406;&#x3001;grep &#x641C;&#x7D22;&#x5185;&#x5BB9;&#x3001;find &#x641C;&#x7D22;&#x6587;&#x4EF6;</li>
+</ul>
+</li>
+<li>&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x548C;&#x7F51;&#x7EDC;&#x76F8;&#x5173;&#x7684;&#x547D;&#x4EE4;<ul>
+<li>ipconfig &#x67E5;&#x770B;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x5C5E;&#x6027;&#xFF0C;&#x914D;&#x7F6E;ip&#x5730;&#x5740;</li>
+<li>netstat &#x67E5;&#x770B;&#x5404;&#x79CD;&#x7F51;&#x7EDC;&#x76F8;&#x5173;&#x4FE1;&#x606F;</li>
+<li>route &#x67E5;&#x770B;&#x8DEF;&#x7531;</li>
+<li>ping</li>
+</ul>
+</li>
+<li>&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;&#x7684;&#x5E38;&#x7528;&#x547D;&#x4EE4;&#x6709;&#xFF1A;<ul>
+<li>ps -ef &#x67E5;&#x770B;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;</li>
+<li>kill &#x6740;&#x6B7B;&#x8FDB;&#x7A0B;</li>
+</ul>
+</li>
+<li>&#x7CFB;&#x7EDF;&#x65B9;&#x9762;&#x5E38;&#x7528;&#x7684;&#x6709;&#xFF1A;<ul>
+<li>top &#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x663E;&#x793A;cpu&#x3001;&#x5185;&#x5B58;&#x3001;&#x8FDB;&#x7A0B;&#x7B49;&#x60C5;&#x51B5;</li>
+<li>iostat &#x53EF;&#x4EE5;&#x67E5;&#x770B;io&#x8BFB;&#x5199;/cpu&#x4F7F;&#x7528;&#x60C5;&#x51B5;</li>
+<li>sar &#x67E5;&#x8BE2;cpu&#x3001;&#x78C1;&#x76D8;&#x4F7F;&#x7528;&#x60C5;&#x51B5;</li>
+<li>env &#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x73AF;&#x5883;&#x53D8;&#x91CF;</li>
+<li>date &#x663E;&#x793A;&#x65E5;&#x671F;</li>
+</ul>
+</li>
+<li>&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x670D;&#x52A1;&#x7684;&#x5E38;&#x7528;&#x547D;&#x4EE4;<ul>
+<li>systemctl &#x7BA1;&#x7406;&#x670D;&#x52A1;</li>
+<li>firewall-cmd &#x9632;&#x706B;&#x5899;</li>
+<li>vsftpd &#x6587;&#x4EF6;&#x4F20;&#x8F93;</li>
+</ul>
+</li>
+<li>&#x4E00;&#x4E9B;&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;&#x7BA1;&#x7406;&#x7684;<ul>
+<li>rpm&#x3001;yum&#x3001;dpkg&#x3001;apt-get&#x7528;&#x4E8E;&#x5B89;&#x88C5;&#x7BA1;&#x7406;&#x8F6F;&#x4EF6;</li>
+<li>&#x89E3;&#x538B;&#x7F29;&#x6709;&#xFF1A;<ul>
+<li>tar -xvf xxx.tar &#x89E3;&#x538B;tar&#x5305;</li>
+<li>zip&#x3001;unzip</li>
+<li>gzip&#x4E0E;gunzip</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../十、操作系统/" class="navigation navigation-prev " aria-label="Previous page: 十、操作系统">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../十二、数据库/" class="navigation navigation-next " aria-label="Next page: 十二、数据库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"十一、Linux","level":"1.12","depth":1,"next":{"title":"十二、数据库","level":"1.13","depth":1,"path":"十二、数据库/README.md","ref":"./十二、数据库/README.md","articles":[]},"previous":{"title":"十、操作系统","level":"1.11","depth":1,"path":"十、操作系统/README.md","ref":"./十、操作系统/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-sharing","-search","-favicon","-code","expandable-chapters","intopic-toc","back-to-top-button","search-pro","splitter","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":{"de":"In diesem Artikel","en":"In this article"},"maxDepth":2,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"songzhuozhu","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeLou":{"nav":[{"target":"_blank","url":"https://github.com/zhuozhudd","name":"Github"}]}},"title":"CppInterview","gitbook":"*","description":"秋招总结"},"file":{"path":"十一、Linux/README.md","mtime":"2021-11-15T02:47:49.017Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-15T03:17:42.817Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
