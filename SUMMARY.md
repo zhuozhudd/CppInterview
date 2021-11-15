@@ -4,7 +4,7 @@
 - [三、C++关键字](./三、C++关键字/README.md)
 - [四、C++面向对象](./四、C++面向对象/README.md)
 - [五、C++内存管理](./五、C++内存管理/README.md)
-- [六、C++STL C库函数](./六、C++STL C库函数/README.md)
+- [六、C++STL C库函数](./六、C++STL_C库函数/README.md)
 - [七、C++新特性](./七、C++新特性/README.md)
 - [八、计算机网络](./八、计算机网络/README.md)
 - [九、网络编程](./九、网络编程/README.md)
